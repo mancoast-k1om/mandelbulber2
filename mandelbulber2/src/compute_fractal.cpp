@@ -861,7 +861,7 @@ void Compute(const cNineFractals &fractals, const sFractalIn &in, sFractalOut *o
 					CVector4 z4D(z, w);
 					Coastn4DIteration(z4D, fractal);
 					z = z4D.GetXYZ();
-					w = z4D.w;
+					w = (z4D.w + 1 + sqrt(5)) / 2.0;
 					break;
 				}
 				case mandelboxVaryScale4D:
