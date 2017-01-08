@@ -856,6 +856,14 @@ void Compute(const cNineFractals &fractals, const sFractalIn &in, sFractalOut *o
 					w = z4D.w;
 					break;
 				}
+				case coastn4D:
+				{
+					CVector4 z4D(z, w);
+					Coastn4DIteration(z4D, fractal);
+					z = z4D.GetXYZ();
+					w = z4D.w;
+					break;
+				}
 				case mandelboxVaryScale4D:
 				{
 					CVector4 z4D(z, w);

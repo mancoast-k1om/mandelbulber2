@@ -216,6 +216,7 @@ void Menger4DIteration(CVector4 &z4D, int i, const cFractal *fractal, sExtendedA
 void Menger4Dmod1Iteration(CVector4 &z4D, int i, const cFractal *fractal, sExtendedAux &aux);
 void Sierpinski4DIteration(CVector4 &z4D, int i, const cFractal *fractal, sExtendedAux &aux);
 void Quaternion4DIteration(CVector4 &z4D, const cFractal *fractal);
+void Coastn4DIteration(CVector4 &z4D, const cFractal *fractal);
 
 void TransformAdditionConstant4DIteration(CVector4 &z4D, const cFractal *fractal);
 void TransformBoxFold4DIteration(CVector4 &z4D, const cFractal *fractal, sExtendedAux &aux);

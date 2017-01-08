@@ -8392,6 +8392,17 @@ void Quaternion4DIteration(CVector4 &z4D, const cFractal *fractal)
 }
 
 /**
+* Coastn4D
+*/
+void Coastn4DIteration(CVector4 &z4D, const cFractal *fractal)
+{
+	z4D = CVector4(z4D.x * z4D.x - z4D.y * z4D.y - z4D.z * z4D.z - z4D.w * z4D.w, z4D.x * z4D.y,
+		z4D.x * z4D.z, z4D.w);
+	z4D *= fractal->transformCommon.constantMultiplier1220;
+	z4D += fractal->transformCommon.additionConstant0000;
+}
+
+/**
  * Formula based on Mandelbox (ABox). Extended to 4 dimensions and with variable scale parameter.
  */
 void MandelboxVaryScale4DIteration(CVector4 &z4D, const cFractal *fractal, sExtendedAux &aux)

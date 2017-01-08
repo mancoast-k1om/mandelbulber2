@@ -290,6 +290,9 @@ void DefineFractalList(QList<sFractalDescription> *fractalList)
 	fractalList->append(sFractalDescription("Quaternion_4D", "quaternion_4D", quaternion4D,
 		deltaDEType, logarithmicDEFunction, cpixelEnabledByDefault, 10));
 
+	fractalList->append(sFractalDescription("Coast'n 4D", "coastn_4D", coastn4D,
+		deltaDEType, logarithmicDEFunction, cpixelEnabledByDefault, 10));
+
 	fractalList->append(sFractalDescription("Mandelbox Vary Scale 4D", "mandelbox_vary_scale_4d",
 		mandelboxVaryScale4D, analyticDEType, linearDEFunction, cpixelEnabledByDefault, 100));
 
